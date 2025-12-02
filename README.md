@@ -1,2 +1,74 @@
-# ateves.github.io
-I accidentally finished my endless scrolling website but it's endlessly looping right to left. I am currently working on one that scrolls top to bottom, without breaking pattern
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Scrolling Grass Background</title>
+    <style>
+        /* Ensures the body and html take up the full screen */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide scroll bars for a clean look */
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Hides the extra parts of the inner div */
+            position: relative;
+        }
+
+        .sliding-background {
+            /* 1. Make sure you have the image file named 'grass_background.jpg' in the same folder */
+            background-image: url('grass_background.jpg');
+            background-repeat: repeat-x;
+            height: 100%; /* Same height as container */
+            width: 300%; /* Set width to at least double the container width for seamless loop */
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: slide 30s linear infinite; /* Adjust duration (30s) to control speed */
+        }
+
+        /* Define the animation */
+        @keyframes slide {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                /* Translate left by exactly one image width (1/3 or 33.33% of the total width) */
+                transform: translate3d(-33.33%, 0, 0); 
+            }
+        }
+
+        /* Style for your actual content */
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Choose a text color that stands out against the green grass */
+            text-shadow: 1px 1px 3px black;
+            font-family: sans-serif;
+            z-index: 10; /* Ensures content is above the background */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sliding-background"></div>
+        <div class="content">
+            <h1>Welcome to my website! The background is scrolling endlessly!</h1>
+        </div>
+    </div>
+
+</body>
+</html>
