@@ -9,13 +9,19 @@
         <title>My Website</title>
     <!-- Reference the main.js file with the defer attribute -->
     <script src="main.js" defer></script>
+    <style>
+  .large-text {
+    font-size: 60px;
+      font-family: helvetica;
+  }
+</style>
 </head>
 <body>
 
 
 <div class="dchover">
   <div class="dchover__btn">
-    <span>ANTHONY T</span>
+    <p class="large-text"><span>ANTHONY T.</span></p>
   </div>
   <br>
 <a href="https://www.linkedin.com/in/anthony-teves/" style="color:red; text-decoration:none;">Linkedin</a><br>
