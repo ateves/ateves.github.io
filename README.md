@@ -5,7 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+        <title>My Website</title>
+    <!-- Reference the main.js file with the defer attribute -->
+    <script src="main.js" defer></script>
 </head>
 <body>
 
