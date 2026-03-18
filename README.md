@@ -1,5 +1,15 @@
 # ateves.github.io
 # A web site. kudos to ES design studio from codepen.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+
+
 <div class="dchover">
   <div class="dchover__btn">
     <span>ANTHONY T</span>
@@ -16,3 +26,5 @@
                <a href="  
   https://codepen.io/esdesignstudio" style="text-decoration:none;">Credit CODEPEN @esdesignstudio</a>
        </div>
+  </body>
+</html>
