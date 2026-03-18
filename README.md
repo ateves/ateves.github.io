@@ -2,7 +2,7 @@
 # A web site. kudos to ES design studio from codepen.io
 <div class="dchover">
   <div class="dchover__btn">
-    <span>Anthony T.</span>
+    <span>ANTHONY T</span>
   </div>
   <br>
 <a href="https://www.linkedin.com/in/anthony-teves/" style="color:red; text-decoration:none;">Linkedin</a><br>
