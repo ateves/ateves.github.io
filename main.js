@@ -44,7 +44,7 @@ if (target) {
     if (isAnimating) return;
 
     isAnimating = true;
-    lockSize(); // 執行鎖定
+    lockSize(); 
 
     const textChars = originalText.split("");
     const revealableCharsCount = textChars.filter(char => !isSkippableChar(char)).length;
